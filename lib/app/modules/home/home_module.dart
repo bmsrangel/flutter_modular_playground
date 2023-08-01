@@ -9,12 +9,15 @@ class HomeModule extends Module {
 
   @override
   List<Module> get imports => [
-        AModule(),
-        BModule(),
+        // AModule(),
+        // BModule(),
       ];
 
   @override
   void routes(RouteManager r) {
-    r.child('/', child: (_) => const HomePage());
+    r.child('/home', child: (_) => const HomePage(), children: [
+      ModuleRoute('/a', module: AModule()),
+      ModuleRoute('/b', module: BModule()),
+    ]);
   }
 }

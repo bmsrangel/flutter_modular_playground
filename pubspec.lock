@@ -74,10 +74,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_modular
-      sha256: "0d21ce009ff33fc5c2c9f1db13137f3057f582eb5d56f223e39a9d59f2a65770"
+      sha256: a4c56acc3b98a177a670cf0d5ac8def6cd1dadb12882a38bdee3d04235c45436
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.0"
+    version: "6.0.0+2"
   flutter_test:
     dependency: "direct dev"
     description: flutter

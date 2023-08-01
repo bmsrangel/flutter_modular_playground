@@ -4,8 +4,13 @@ import 'package:playground_modular/app/modules/a/a_page.dart';
 import 'package:playground_modular/app/modules/a/pages/new_a_page.dart';
 
 class AModule extends Module {
+  // @override
+  // void exportedBinds(Injector i) {
+  //   i.addSingleton(AController.new);
+  // }
+
   @override
-  void exportedBinds(Injector i) {
+  void binds(Injector i) {
     i.addSingleton(AController.new);
   }
 
