@@ -11,13 +11,19 @@ class APage extends StatefulWidget {
 }
 
 class _APageState extends State<APage> {
-  final aController = Modular.get<AController>();
+  late final AController aController;
+
+  @override
+  void initState() {
+    super.initState();
+    Modular.bindModule(AModule());
+    aController = Modular.get<AController>();
+  }
 
   @override
   void dispose() {
     super.dispose();
-    Modular.dispose<AModule>();
-    debugPrint('A Module disposed');
+    Modular.unbindModule<AModule>();
   }
 
   @override
