@@ -4,11 +4,6 @@ import 'package:playground_modular/app/modules/b/b_page.dart';
 import 'package:playground_modular/app/modules/b/pages/new_b_page.dart';
 
 class BModule extends Module {
-  // @override
-  // void exportedBinds(Injector i) {
-  //   i.add(BController.new);
-  // }
-
   @override
   void binds(Injector i) {
     i.add(BController.new);

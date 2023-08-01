@@ -22,7 +22,7 @@ class _APageState extends State<APage> {
         child: ElevatedButton(
           child: const Text('Go to New A Page'),
           onPressed: () {
-            Modular.to.navigate('/home/a/new_a');
+            Modular.to.pushNamed('/home/a/new_a');
           },
         ),
       ),

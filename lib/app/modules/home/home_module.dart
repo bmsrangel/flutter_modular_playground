@@ -8,12 +8,6 @@ class HomeModule extends Module {
   void binds(Injector i) {}
 
   @override
-  List<Module> get imports => [
-        // AModule(),
-        // BModule(),
-      ];
-
-  @override
   void routes(RouteManager r) {
     r.child('/home', child: (_) => const HomePage(), children: [
       ModuleRoute('/a', module: AModule()),
